@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yum</title>
+    <style>
+        img {
+            position:absolute;
+            width:100%;
+            height:100%;
+            transition:all 1s;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body style="justify-content:center;align-items:center;display:flex;flex-direction:column;background-color:#fefcf2;">
+    <h1 style="font-size:5rem;">make pizza</h1>
+    <div id="p" style="position:relative;width:200px;height:200px">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAnJJREFUeJztmrFOAkEQhgdj6GhMoCQYEi0ppDMaCp/BxE7FmNjpk2hnYsTYmfgURGOHBaUmRGJLYkNHgwVMuFt2bmbvFsTsfBXc7u1t7v92FjgAFEVRlHDJ+Rro5/WOahpnHNo6x42984zDTljzMso/JrUB0sQHvU7aSwAAQLFaNw95NUINcD3Bkrwo8aezB6frHN2fWo9zRriaoAZIO1LJSxPfHbttBm+5+NQERqQyQQ3gOkiTz5o4B2dEWhPUAK5DxIDE5H0nzoFGcCaoAQykAdza/6vkTUwTXGtB8AasC/ok7verBs6zWK2jmol1Tg1wPWFV1j6C88B5UZ8YKdQAqmHQ61gjXpXkTcx5RWpWYi1QA6Qdv5stLxfsFwrW45Xh0Mv4OM9yqynqH7wBS78BleHQmna/UCDtWCTBGyCuAZiOr7XKXQehriftx6EGcB3y3Xbsva87b57HrX/X9rJwHmoA1YDJj2qN6ZFna79F7+uL3hnUAKphlvyE/ZtDAAB4ubSbgCx6l+DAeSJmDTNRA6iGfLedAwAY1RpL+fqH5vha85Hk9RehJMi783W1hS/HAPM1wde3QwpXEw5OSgAwP080efP603pe8AZIvgvkAADy3bbVBN9wydO7TCn2LlLDpkfUACvss0GsBeZugE9g3hsXmSYgXetU8jvtWwCY/QZoVn9q7SPBG8DWgMiaR1tiT4owgawmINJPkmbyEZz+9xS8AeK79fE493TVWhMQX0YgmDjCJb99TP6PMYYa4HoCZwKS1QhB4kiq5BE1IO2JFhMQkREc0sQR1+QRNcDXQK5GOOA1cZPgDVAURVEUJVx+AV0i87mFWhHmAAAAAElFTkSuQmCC">
+    </div>
+    <button style="background-color:#faebd7;border:4px solid black;padding:10px;margin-top:30px;font-size:2rem;font-family:serif;">cheese</button>
+
+    <script>
+        const p=document.querySelector("#p"),b=document.querySelector("button");
+        b.onclick=()=>{let c=new Image;c.src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAHJJREFUOI3tkLEOgCAMRB9GVz+H/5/9HFaGuhRToUVn4yUkUHrX68GP9NRQSwYQIG37MfwvAUlqyQJgSKJicweNGE18IzA0zYTcFRSi5ybeD/AE2u7Jvp371MGVQ1cfcokykObAWvayWPuCNlnhyM1XcAL7NCovDYc0bwAAAABJRU5ErkJggg==";
+        c.style="position:absolute;transform:rotate("+360*Math.random()+"deg)";
+        p.append(c);
+        setTimeout(()=>{c.style.opacity=0;c.ontransitionend=()=>c.remove()},2e3)};
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza</title>
+    <style>
+        @font-face {
+            font-family: 'HelvetiPixel-Optimized';
+            src: url('data:@file/octet-stream;base64,d09GMgABAAAAAAXIAA4AAAAAFGAAAAVwAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GVgCCaggEEQgKm2CZFgtkAAE2AiQDgUQEIAWCVgeBDBu7EaOiVjBKaRR/lWCTIa4fVyGeFClrFKPRoSilcfFOzT7c/+/DYWe/0LGnzvHwsd+3c++z/xcRzasVeRHz5JJY8o80qBZJYqFtRCyRxCKzDRozz/8Yc29icSemf2aCmIZKKTsyHhKQmlkVcdqGQE7PORt+mKzx4efDyiWkec/WsKXGE0nPh56utdbe9n/7fatPVtRmdxENTSzRCIlGSOOX/c8w7aZ1Zf79OrhXQqOqNOuEwtmSaIRKaYltuQI/Y0lF2dClOkzO7GezCgHv0u8f4dVzeYDfH94FYLbFoEQiEIg4E39V5N18B26fXh9/MBF9Ul2AtQvfPH7j/hA5eutCh6P5yACBkDJa2e2eDcI0sm37+dl6Um09r7isV+uuw1ouJGOH/anud2+1dHcEmC9qwsZEIi0YFGXldXXT6xuaMXPW7Dn/lNbFei1chJ2Ll7yt+i8yGE1mi9Vmdzhdbo/XB1j3oyavz1uIrmJ2jgFOg3tUl6H6DKCHYUxASiGFUAqNRipVSo1SpVZKlVR4YYMSFaRzM6rEVzb6agXMq2rtfqvR1as78lVr1fWpXWP03yLpABu3uQdUrk0l76KaQ6rsln7B7F1+Cvn8n8Uv/Vb9sfhruQCLsVS92E/DL5v+DY1fR9eoppo2BCzUVT3KHx9ea81m1ikbR+EkqA7RvSWydM5HbCX+hQk2oKBr9yxHFaTDnPSKxT68h2l72FgpamDJB4VrsN8kheSkIHtMgdNEGqETh0l5Wc7tIA9MKbIuKmFP8InLrUZcO2fBwJWXStwAefpd4YKCLSuEufEnA6rGDrhHYAHqoIVRvUIlMTORZugxgNMkJqJIVZlfOUrRYUeQ9uOhp6ZjVp0TcHx8m1tzMpAq0IIOA9kOxDoWqd8UwJwVDhuwZcOQ0FGajemcERuQcxBeLY/zojPdmJCZ2YmplhyXYF7wHEm1c2oR1mVNMuxyQvPUrdGpsEkumGcATIVpuHVxFZ1pbknQncASzMVI7xL8X491BsEysySYc5yBPBHAhwBTsUB0x0wdRk4jGLgTTmc73uXMkqG0mSqYlK5VdEcSeoZ+QMx8cIRTyg0qFJfHDgreeBAhc3IgnEMiVWbScnu2ra4ySys2I+wRheymgvv2X8EQxjf3TRv+4fdK0ljQg0fW6zbhMralNg1p1SjLWrMLxsYkw9NYsgBkRnITgLJauoQZaUNcJ4J2R/clMjUO90G9HAQgfhEIqGa3kCItxiciPoZG4OpNrMvGccAXclvJ6lA/vrPYZX0LBki2TEuL7q6XMuM7ESMynAMkxg/HjIqrC7qjNZbqKzuwQ+uYTRYMHcGtGEDg467FpbQS59w1uaWjWElW8ODUD0E8m8U8yJI66I3Q+HGbYiYhCtDFmxJxsAZ4tCpefNU5gAjQZbiAqniAFYDD0psPFNzGgLe9DCOb/prSdOC3rr60VBZJe73Cq+iY3XX8v/XjWxgIFn33acumf53SB1Ro/Bu6TfkIPQmCfNQNHM0WSAL86rG4yQjEYYgWTKENxABTEK2cf7QxIFpOBsQUeGxQo7UoIEKccdFoaLN1Ix26uY0WBq6Wkm5vjZs0JkQAK+RwywuNsz2bDDTmdpBQWEtSbZwUZthPSoVzpDLX24tqhYcKUfaTRDgJtaUkzbSRFBaLk1LtGKmsdTJRF4MPTLp80Y4LB/Zh8vpXKacC2/R0axP7TLA74OwTDy7gx4xtOD9MnAdxgoQwYrlH9ty6s6deuaRHxbCfFx3Qw7c0B4n8XgKLPsq2BBvs1oR47HNV8XH4955tjrmERMQkpGTkFJRU1AyMSsoqqmrqGppa2jq6evoGhkbGJqZm5haWVjYim8nrJ0R5Ag==') format('woff2');
+        }
+        * {
+            font-family: 'HelvetiPixel-Optimized', sans-serif;
+            cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEn2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4KPHg6eG1wbWV0YSB4bWxuczp4PSdhZG9iZTpuczptZXRhLyc+CjxyZGY6UkRGIHhtbG5zOnJkZj0naHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyc+CgogPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9JycKICB4bWxuczpBdHRyaWI9J2h0dHA6Ly9ucy5hdHRyaWJ1dGlvbi5jb20vYWRzLzEuMC8nPgogIDxBdHRyaWI6QWRzPgogICA8cmRmOlNlcT4KICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0nUmVzb3VyY2UnPgogICAgIDxBdHRyaWI6Q3JlYXRlZD4yMDI1LTAxLTE1PC9BdHRyaWI6Q3JlYXRlZD4KICAgICA8QXR0cmliOkV4dElkPjU4YmU3MGY5LWQzMGItNDA5MC1hMTAwLWIzZjQ5ZTcxYmUyODwvQXR0cmliOkV4dElkPgogICAgIDxBdHRyaWI6RmJJZD41MjUyNjU5MTQxNzk1ODA8L0F0dHJpYjpGYklkPgogICAgIDxBdHRyaWI6VG91Y2hUeXBlPjI8L0F0dHJpYjpUb3VjaFR5cGU+CiAgICA8L3JkZjpsaT4KICAgPC9yZGY6U2VxPgogIDwvQXR0cmliOkFkcz4KIDwvcmRmOkRlc2NyaXB0aW9uPgoKIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgeG1sbnM6ZGM9J2h0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvJz4KICA8ZGM6dGl0bGU+CiAgIDxyZGY6QWx0PgogICAgPHJkZjpsaSB4bWw6bGFuZz0neC1kZWZhdWx0Jz5VbnRpdGxlZCBkZXNpZ24gLSAxPC9yZGY6bGk+CiAgIDwvcmRmOkFsdD4KICA8L2RjOnRpdGxlPgogPC9yZGY6RGVzY3JpcHRpb24+CgogPHJkZjpEZXNjcmlwdGlv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') 32 32, auto;
+        }
+        body {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #fefcf2;
+        }
+        button {
+            background-color: antiquewhite;
+            border: 4px solid black;
+            padding: 10px;
+            margin-top: 30px;
+        }
+        button:hover {
+            background-color: black;
+            color: white;
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: all 1s;
+        }
+        #pizza {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <meta width=device-width, initial-scale=1.0>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2279%22>🍕</text></svg>" />
+</head>
+<body>
+    <h1 style="font-size:5rem;">how to make a pizza</h1>
+    <div id="pizza">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAzdJREFUeJzt3bFqFFEUxvGJiF0awZRBEbS00E6UFHkGwU6NBNKZJ9FOCEbshDxFSLDTwlJBIraCTTqb2DonMseTc+feu/v9f92ym93Zm49zzszs7A4DAAAAAAAAAABYZiutNyDr1/HeWcvXv/pge6HX8FLrDUBbBEAcARDXff/yevzPbx9rbco/Xbt5b/L+3mcEKoA4AiCOAIhr3p9K9/j3z9+mtsfz+M2z0ON7nxGoAOIIgDgCIK56/7E9v3SPv38276mBDyvTS5adEWrPBFQAcQRAHAEQN3u/ifb81j0+Kzsj1J4JqADiCIA4AiCueH/J9vzee3yWnRFazwRUAHEEQBwBEHe59guq9XzLvl+7HtFzCVlUAHEEQBwBEJeeAbLn9zHNrqdd7+xxASqAOAIgjgCIm/04gPp+v6f1cQEqgDgCII4AiAvvQ355tx1q4j+29qMvgb+s72+FHn/7yV7of0oFEEcAxBEAccWPA/TW87+vroYef/30dKYtuRi7ntGZwEMFEEcAxBEAcdU/E1ib7eneTGDv720mKI0KII4AiCMA4orPAMvWQ72ZIfr+Sj9fFhVAHAEQRwDEpWeAK58PJ+/vred5rxc9d1D779dTz34eFUAcARBHAMSFZwDb83/f2TCPOAg936Kfr8/2/NaoAOIIgDgCIC48A5zv+WMPXz0a3T56EZsJrN56fm12PS3vOIyHCiCOAIgjAOLCM4C99ix6rWDvop8hrM32/Bsvv/IdQbg4AiCOAIhLf/f8ye6t0QzgHSfo7drBqLlngs2na6Pb3npGvw/AogKIIwDiCIC49GcC7X7oye4Qmgl6l+358XMZa5P3Znu+RQUQRwDEEQBxxa8N9Hr+3cPXo9ufNnZKb0JI6f36aM+362F/HyB7vt9DBRBHAMQRAHGz/jb9MPifF7C/jVt7Jqh97aLX863S+/0WFUAcARBHAMTNPgNY0ZnAan3cwGN7vNW651tUAHEEQBwBEFd9BrCi1xW0nhGyPd6q3fMtKoA4AiCOAIhrPgN4Ss8IWYvW4z1UAHEEQBwBENd1f/ofrb+foPce76ECiCMA4ggAAAAAAAAAAAAAAADAkvkDm17qkGFp0GUAAAAASUVORK5CYII=" style="position: relative;">
+    </div>
+    <button style="font-size:2rem;">add cheese</button>
+
+    <script>
+        const pizza = document.getElementById('pizza');
+        const button = document.querySelector('button');
+        button.addEventListener('click', () => {
+            const cheese = document.createElement('img');
+            cheese.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAYJJREFUeJzt3L1SAkEQhdHV0tTH8f1jHsfUQFNrAynEYWb3OycjYqFudff8wLYBAAAAAAAAAAAAAAAAAEfyNPsBVvP58f718/Xr2+XU39Hz7AdgLgGIE4C4U/e3v9jPAHtnmwlUgDgBiBOAuFP1sxGuzQR7R5sRVIA4AYgTgLjl+9XsHnzr+++tPhOoAHECECcAcUv3p23r7c0/mgoQJwBxAhD3MvsB7l1ncx8VIE4A4gQgbrk1dO1e/mwqQJwAxAkAAEDQ4dfY1/YN3Cf4nVVAnADECUDc9PsAtzr6/YHVzjpUgDgBiBOAuOlr4NE98Wi/LXz0TKACxAlAnADELbcPsNo6ebTZn08FiBOAOAGIW24G+G+33g8YbXbP31MB4gQgTgDiHt6PVvvfvdq+w54KECcAcQIQN73frX5efnYqQJwAxAlA3PL9tL5OH00FiBOAOAGI0093VjurGE0FiBOAOAGIO1S/GqF+FqECxAlAnAAAAAAAAAAAAAAAAAAAABzINyjIXIRmmuDtAAAAAElFTkSuQmCC';
+            cheese.style = `position: absolute; transform: rotate(${Math.random() * 360}deg);`;
+            pizza.appendChild(cheese);
+            setTimeout(() => {
+                cheese.style.opacity = 0;
+                cheese.addEventListener('transitionend', () => {
+                    cheese.remove();
+                });
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
